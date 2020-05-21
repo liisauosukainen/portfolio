@@ -11,62 +11,69 @@ body {
 header {
     font-size: 14px;
     text-align: center;
-    background: #7ca453;
     color: #000000;
-    padding: 10px;
+    padding: 3%;
+}
+
+.bgimage {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/flower-2336287_1280.jpg");
+    min-height: 75%;
 }
 
 nav {
-    background: #e0ffb1;
+    background-color: black;
     padding: 6px;
+    width: 100%
 }
 
-aside{
+aside {
     width: 20%;
-    margin: 0 1.5%;
+    height: inherit;
     padding: 20px 5px;
-    display : inline-block;
-    vertical-align: top;
+    float: left;
 }
 
-section{
-    width: 73%;
-    margin: 0 1.5%;
-    padding: 10px;
-    display : inline-block;
+section {
+    width: 80%;
+    height: inherit;
+    padding: 20px 5px;
+    float: right;
 }
 
 .page-container {
-  position: relative;
-  min-height: 100vh;
+    position: relative;
+    min-height: 100vh;
 }
 
 .content-wrap {
-  padding-bottom: 2.5rem;    /* Footer height */
+    padding-bottom: 2.5rem; /* Footer height */
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;            /* Footer height */
-  text-align: center;
-  background: #7ca453;
-  color: #000000;
-  padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem; /* Footer height */
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 10px;
 }
 
 /* Any link in a page*/
 a.nav-link {
     text-decoration: none;
-    background-color: #add681;
-    color: #000000;
+    background-color: black;
+    color: white;
     padding: 6px;
     border: none;
+    display: inline;
 }
 
 a.nav-link:hover {
-    color: #E1E2E1;
+    color: grey;
 }
 
 p {
@@ -77,7 +84,7 @@ p {
 Responsive
 */
 @media only screen and (max-width: 600px) {
-    .nav-link {
+    a.nav-link {
         display: block;
     }
 
